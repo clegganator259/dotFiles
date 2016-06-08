@@ -1,0 +1,227 @@
+{
+	"folder_history":
+	[
+	],
+	"last_window_id": 1,
+	"settings":
+	{
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "Instance ID,Instance Name,Instance Type,Private Ip,Public Ip,Tags\ni-d006975a,ADOP-M_UAT_Jira-Birt,m4.large,10.0.1.118,<No Public Ip Address>,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-UAT-Jira-Birt/7407f890-02e3-11e6-89b6-500c4241c2fe)(aws:cloudformation:stack-name->ADOP-M-UAT-Jira-Birt)(aws:cloudformation:logical-id->Jira)(Name->ADOP-M_UAT_Jira-Birt)\ni-6487e0e8,adop-jenkins-pse-prod-v4-controller-3,r3.large,10.16.106.5,52.208.62.117,(tiger:version->)(Name->adop-jenkins-pse-prod-v4-controller-3)(tiger:cluster->adop-jenkins-pse-prod-v4)(cloudbees:pse:cluster->adop-jenkins-pse-prod-v4)(cloudbees:pse:type->controller)(cloudbees:pse:version->)(tiger:type->controller)(dna:server_id->adop-jenkins-pse-prod-v4-controller-3)\ni-cc86e140,adop-jenkins-pse-prod-v4-worker-1,r3.large,10.16.215.78,52.48.93.134,(tiger:version->)(cloudbees:pse:version->)(Name->adop-jenkins-pse-prod-v4-worker-1)(dna:server_id->adop-jenkins-pse-prod-v4-worker-1)(cloudbees:pse:type->controller)(tiger:cluster->adop-jenkins-pse-prod-v4)(tiger:type->worker)(cloudbees:pse:cluster->adop-jenkins-pse-prod-v4)\ni-fd135676,ADOP-F_ACP_Jira,m4.large,10.0.240.38,<No Public Ip Address>,(Name->ADOP-F_ACP_Jira)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-Jira/8f6701a0-a328-11e5-9a18-50fae9b6ecd2)(aws:cloudformation:stack-name->ALM-FLEET-Jira)(aws:cloudformation:logical-id->Jira)\ni-5a4775d2,uat-elasticsearch-node,m3.medium,10.0.3.16,<No Public Ip Address>,(Name->uat-elasticsearch-node)(aws:autoscaling:groupName->uat-elasticsearch-auto-scale-group)\ni-ca262f41,ADOP-F_PAPERBOY_Jira,m4.large,10.0.240.100,<No Public Ip Address>,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-Paperboy-Jira/b2cf4c90-c378-11e5-92de-50faeb52a4d2)(Name->ADOP-F_PAPERBOY_Jira)(aws:cloudformation:logical-id->Jira)(aws:cloudformation:stack-name->ALM-FLEET-Paperboy-Jira)\ni-7958d69e,ALM_PROD_Nagios,t1.micro,10.0.0.171,54.194.241.84,(Name->ALM_PROD_Nagios)(client->internal - ADOP/M)(service->Nagios)\ni-9c9ecd16,ALM_PRDO_nexus_proxy_node,t2.micro,10.0.1.116,<No Public Ip Address>,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-nexus-proxy/1afe9b80-fbc9-11e5-a4e0-50faeb52f036)(Enviroment->PROD)(aws:cloudformation:logical-id->NexusProxyAutoscalingGroup)(aws:cloudformation:stack-name->alm-prod-nexus-proxy)(Name->ALM_PRDO_nexus_proxy_node)(aws:autoscaling:groupName->alm-prod-nexus-proxy-NexusProxyAutoscalingGroup-JESNLV6FXHYO)\ni-f5f1a34c,ALM_PROD_SonarQube,t2.medium,10.0.1.180,<No Public Ip Address>,(aws:cloudformation:stack-name->FromScratchSonarProd)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/FromScratchSonarProd/bd1f2ef0-83a8-11e5-9d7e-50e241b4d136)(Name->ALM_PROD_SonarQube)(aws:cloudformation:logical-id->SonarQube)\ni-42cc75c8,ALM_UAT_Vault_c,t2.small,10.0.0.193,52.30.95.74,(Name->ALM_UAT_Vault_c)(service->Vault)(client->internal - ADOP/M)\ni-5be112d1,ALM_UAT_Jenkins_slave_centos_new,m3.medium,10.0.1.186,<No Public Ip Address>,(aws:cloudformation:stack-name->ALM-UAT-Jenkins-slave)(Name->ALM_UAT_Jenkins_slave_centos_new)(aws:cloudformation:logical-id->JenkinsSlave)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-UAT-Jenkins-slave/0de08e70-d592-11e5-a471-50a686335cd2)\ni-0214e1af,ALM_UAT_Selenium_Node,m1.small,10.0.1.229,<No Public Ip Address>,(Name->ALM_UAT_Selenium_Node)(service->Selenium)(LaunchSource->SeleniumGridScalerPlugin)(client->internal - ADOP/M)\ni-132b17f4,ALM_PROD_docker.accenture.com,m3.large,10.0.0.185,52.17.55.83,(client->shared service - ADOP/M)(Name->ALM_PROD_docker.accenture.com)(service->Docker)\ni-3272318b,ALM_PROD_Jenkins_slave3_platform_linux_centos,m3.medium,10.0.1.196,<No Public Ip Address>,(aws:cloudformation:logical-id->JenkinsSlave)(aws:cloudformation:stack-name->jenkinsProdSlave3)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/jenkinsProdSlave3/d27083e0-7e2f-11e5-92ae-50d500f62a00)(Name->ALM_PROD_Jenkins_slave3_platform_linux_centos)\ni-9325c819,ADOP_FLEET_Reconnect_Proxy,c1.medium,10.1.240.13,52.30.112.192,(aws:cloudformation:logical-id->Instance)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-F-Reactive-Proxy/931d9f30-cf55-11e5-92de-50faeb52a4d2)(Name->ADOP_FLEET_Reconnect_Proxy)(aws:cloudformation:stack-name->ADOP-F-Reactive-Proxy)\ni-7bed61f1,ADOP/M_PROD_Vault2_c,m3.medium,10.0.0.100,52.50.119.178,(client->Shared service - ADOP/M)(service->Vault)(Name->ADOP/M_PROD_Vault2_c)\ni-4f84c8c5,ADOP-M_UAT_JIRA_Preprod,m4.large,10.0.1.210,<No Public Ip Address>,(Name->ADOP-M_UAT_JIRA_Preprod)\ni-57ecccee,ALM_UAT_Jenkins,m4.large,10.0.1.244,<No Public Ip Address>,(aws:cloudformation:stack-name->almuatjenkins)(aws:cloudformation:logical-id->Instance)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/almuatjenkins/82506fb0-8857-11e5-b284-50d5026fd80a)(Name->ALM_UAT_Jenkins)\ni-2a0494a6,alm-uat-ha-proxy-test-Node,m3.medium,10.0.5.18,52.48.39.110,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-ha-proxy-test/1e28f240-234e-11e6-ba3a-500c3d40ec36)(aws:cloudformation:logical-id->ProxyServerAsg)(aws:cloudformation:stack-name->alm-uat-ha-proxy-test)(aws:autoscaling:groupName->alm-uat-ha-proxy-test-ProxyServerAsg-NH9AIMFFWS8E)(CreatedBy->david.clegg)(Name->alm-uat-ha-proxy-test-Node)\ni-fce9d574,ADOP-M_PROD_elasticsearch,m3.medium,10.0.3.177,<No Public Ip Address>,(Name->ADOP-M_PROD_elasticsearch)(aws:cloudformation:logical-id->ElasticSearchAutoscalingGroup)(DiscoveryName->ec2-node-es)(aws:autoscaling:groupName->ADOP-M-Prod-elasticsearch-for-bitbucket-ElasticSearchAutoscalingGroup-1GFN7XJYRM18Y)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Prod-elasticsearch-for-bitbucket/55f3aff0-2658-11e6-9741-50a686335cd2)(Enviroment->PROD)(aws:cloudformation:stack-name->ADOP-M-Prod-elasticsearch-for-bitbucket)\ni-e398a36b,ADOP-M-newsource-node,m4.xlarge,10.0.3.29,<No Public Ip Address>,(aws:cloudformation:logical-id->BitbucketAutoscalingGroup)(aws:autoscaling:groupName->ADOP-M-Prod-bitbucket-data-center-BitbucketAutoscalingGroup-1ILJ0YBHV6TBD)(aws:cloudformation:stack-name->ADOP-M-Prod-bitbucket-data-center)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Prod-bitbucket-data-center/26f3a240-0e12-11e6-8e83-50a686326636)(Enviroment->UAT)(Name->ADOP-M-newsource-node)\ni-d2f29158,ALM_PROD_bitbucket-migration,m4.xlarge,10.0.1.98,<No Public Ip Address>,(Name->ALM_PROD_bitbucket-migration)\ni-a12eaa2d,ADOP-M_UAT_Development,m4.large,10.0.2.233,52.51.50.227,(Name->ADOP-M_UAT_Development)\ni-45b997cd,ALM_PROD_nexus_master,m3.medium,10.0.3.87,<No Public Ip Address>,(aws:cloudformation:stack-name->alm-prod-nexus-master)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-nexus-master/586132e0-fa79-11e5-b837-50faeb56c436)(aws:autoscaling:groupName->alm-prod-nexus-master-NexusMasterAutoscalingGroup-1271H1D5369PC)(Enviroment->PROD)(Name->ALM_PROD_nexus_master)(aws:cloudformation:logical-id->NexusMasterAutoscalingGroup)\ni-65fbcec4,ALM_PROD_Jenkins_master,m3.medium,10.0.1.106,52.19.120.4,(service->Jenkins)(client->shared service - ADOP/M)(Name->ALM_PROD_Jenkins_master)\ni-2e8e4fa4,ALM_UAT_SecurityMonkey,m3.large,10.0.0.226,52.16.192.188,(Name->ALM_UAT_SecurityMonkey)\ni-58e4a7e1,ALM_PROD_Jenkins_slave4_platform_Linux_centos,m3.medium,10.0.1.61,<No Public Ip Address>,(aws:cloudformation:logical-id->JenkinsSlave)(Name->ALM_PROD_Jenkins_slave4_platform_Linux_centos)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/jenkinsProdSlave4/688b67a0-7e53-11e5-aab2-50fa18c86ae0)(aws:cloudformation:stack-name->jenkinsProdSlave4)\ni-c9245541,ALM_UAT_nexus_nfs,m3.medium,10.0.3.74,<No Public Ip Address>,(aws:cloudformation:stack-name->alm-uat-nexus-master)(aws:cloudformation:logical-id->NexusMasterNFS)(Name->ALM_UAT_nexus_nfs)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-nexus-master/441e1d10-fa75-11e5-888b-500c3d47ea36)\ni-325709b8,ADOP-M_Selenium_Grid_IM,t2.medium,10.0.1.192,<No Public Ip Address>,(aws:cloudformation:stack-name->ADOP-M-Selenium-MI)(aws:cloudformation:logical-id->CentOS7)(Name->ADOP-M_Selenium_Grid_IM)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Selenium-MI/56286fc0-2be3-11e6-b9bb-500c4233b6d2)\ni-7d0b46f5,ALM-CI-ADOP-Stack,m4.xlarge,10.0.0.222,52.31.37.9,(Name->ALM-CI-ADOP-Stack)\ni-e409846e,ALM_PROD_Jenkins_slave6_platform_windows_server_2012,m3.medium,10.0.1.131,<No Public Ip Address>,(Name->ALM_PROD_Jenkins_slave6_platform_windows_server_2012)\ni-33e3aab9,ADOP-M_UAT_Sensu_server_v2,t2.medium,10.0.1.125,<No Public Ip Address>,(Name->ADOP-M_UAT_Sensu_server_v2)\ni-d9b04353,alm-prod-jenkins-slave-on-uat-public,t2.micro,10.0.0.4,52.18.1.252,(Name->alm-prod-jenkins-slave-on-uat-public)\ni-ec2bc566,ADOP_FLEET_Reconnect_Confluence,m4.large,10.1.241.11,<No Public Ip Address>,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-F-Reactive-Confluence/abe36b90-d099-11e5-acc6-500c3d40ec36)(aws:cloudformation:logical-id->Confluence)(aws:cloudformation:stack-name->ADOP-F-Reactive-Confluence)(Name->ADOP_FLEET_Reconnect_Confluence)\ni-e6700f6c,ADOP-F_Proxy-NAT,m3.medium,10.0.240.12,52.30.41.211,(Name->ADOP-F_Proxy-NAT)\ni-8c863a6b,ALM_PROD_NAT,c1.medium,10.0.0.205,54.194.242.17,(client->internal - ADOP/M)(Name->ALM_PROD_NAT)(service->NAT)\ni-3644749c,ALM_UAT_Selenium,t2.medium,10.0.1.184,<No Public Ip Address>,(client->internal - ADOP/M)(service->Selenium)(Name->ALM_UAT_Selenium)\ni-ff514146,ALM_UAT_Windows,t2.micro,10.0.1.80,<No Public Ip Address>,(Name->ALM_UAT_Windows)\ni-dee93152,ALM_UAT_Test_proxy,m3.medium,10.0.2.32,52.49.140.50,(aws:autoscaling:groupName->test-auto-scale)(Name->ALM_UAT_Test_proxy)\ni-7e8d0cf4,ALM_PROD_nexus_nfs,m4.xlarge,10.0.1.125,<No Public Ip Address>,(Name->ALM_PROD_nexus_nfs)(aws:cloudformation:logical-id->NexusMasterNFS)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-nexus-master/586132e0-fa79-11e5-b837-50faeb56c436)(aws:cloudformation:stack-name->alm-prod-nexus-master)\ni-f79ecd7d,ALM_UAT_nexus_proxy_node,t2.micro,10.0.1.83,<No Public Ip Address>,(Enviroment->UAT)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-nexus-proxy-test/8e3d2270-fb1e-11e5-9949-50faeb539036)(aws:autoscaling:groupName->alm-uat-nexus-proxy-test-NexusProxyAutoscalingGroup-1R753WQ3PRREI)(aws:cloudformation:stack-name->alm-uat-nexus-proxy-test)(Name->ALM_UAT_nexus_proxy_node)(aws:cloudformation:logical-id->NexusProxyAutoscalingGroup)\ni-6e8ab2e6,ALM_PRDO_nexus_proxy_node,t2.micro,10.0.3.208,<No Public Ip Address>,(Name->ALM_PRDO_nexus_proxy_node)(aws:cloudformation:logical-id->NexusProxyAutoscalingGroup)(Enviroment->PROD)(aws:autoscaling:groupName->alm-prod-nexus-proxy-NexusProxyAutoscalingGroup-JESNLV6FXHYO)(aws:cloudformation:stack-name->alm-prod-nexus-proxy)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-nexus-proxy/1afe9b80-fbc9-11e5-a4e0-50faeb52f036)\ni-3c86e1b0,adop-jenkins-pse-prod-v4-worker-3,r3.large,10.16.76.164,52.51.15.204,(cloudbees:pse:version->)(tiger:version->)(Name->adop-jenkins-pse-prod-v4-worker-3)(cloudbees:pse:type->controller)(dna:server_id->adop-jenkins-pse-prod-v4-worker-3)(tiger:cluster->adop-jenkins-pse-prod-v4)(cloudbees:pse:cluster->adop-jenkins-pse-prod-v4)(tiger:type->worker)\ni-14fc6aad,ALM_UAT_JIRA,m4.large,10.0.1.117,<No Public Ip Address>,(aws:cloudformation:stack-name->alm-uat-jira)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-jira/894a9b40-6e82-11e5-87b9-50fa18d4e86e)(Name->ALM_UAT_JIRA)(aws:cloudformation:logical-id->Atl)\ni-1228f698,ALM_UAT_logstash,t2.micro,10.0.1.124,<No Public Ip Address>,(Name->ALM_UAT_logstash)(aws:autoscaling:groupName->uat_logstashValidCopy)\ni-e76b2a6f,ALM_PROD_Jenkins_slave_node_3,m3.medium,10.0.3.176,<No Public Ip Address>,(Name->ALM_PROD_Jenkins_slave_node_3)(aws:cloudformation:stack-name->alm-prod-jenkins-slaves)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-jenkins-slaves/764fcb40-031b-11e6-aae4-50a686343cd2)(aws:cloudformation:logical-id->JenkinsSlaveNode3)\ni-7076c2fa,ADOP-F_Ford_Confluence,m4.large,10.0.240.241,<No Public Ip Address>,(Name->ADOP-F_Ford_Confluence)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-Ford-Tools/45ca7450-f03f-11e5-8399-50faeb52a4d2)(aws:cloudformation:logical-id->Confluence)(aws:cloudformation:stack-name->ALM-FLEET-Ford-Tools)\ni-b77c163c,ALM_UAT_HipChatPublic1,m4.large,10.0.0.247,52.17.159.26,(Name->ALM_UAT_HipChatPublic1)\ni-4c732dc6,ALM-UAT_Selenium_Test,t2.medium,10.0.1.197,<No Public Ip Address>,(aws:cloudformation:stack-name->ALM-UAT-Selenium-test)(Name->ALM-UAT_Selenium_Test)(aws:cloudformation:logical-id->CentOS7)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-UAT-Selenium-test/1f487ea0-2bf7-11e6-a645-50a68645b236)\ni-360600be,ALM-UAT-HA-PROXY-Node,m3.medium,10.0.112.194,52.49.142.21,(aws:cloudformation:logical-id->ProxyServerAsg)(aws:cloudformation:stack-name->ALM-UAT-HA-PROXY)(aws:autoscaling:groupName->ALM-UAT-HA-PROXY-ProxyServerAsg-16X0UA3J62C36)(CreatedBy->sachin.kumar.singh)(Name->ALM-UAT-HA-PROXY-Node)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-UAT-HA-PROXY/76e811a0-2cb2-11e6-b589-50faeb542cd2)\ni-a8c89b22,ADOP-M-newsource-node,m4.xlarge,10.0.1.94,<No Public Ip Address>,(Enviroment->UAT)(aws:cloudformation:logical-id->BitbucketAutoscalingGroup)(Name->ADOP-M-newsource-node)(aws:autoscaling:groupName->ADOP-M-Prod-bitbucket-data-center-BitbucketAutoscalingGroup-1ILJ0YBHV6TBD)(aws:cloudformation:stack-name->ADOP-M-Prod-bitbucket-data-center)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Prod-bitbucket-data-center/26f3a240-0e12-11e6-8e83-50a686326636)\ni-567143de,alm-uat-ha-proxy-test-Node,m3.medium,10.0.4.18,52.51.200.103,(Name->alm-uat-ha-proxy-test-Node)(aws:cloudformation:logical-id->ProxyServerAsg)(aws:cloudformation:stack-name->alm-uat-ha-proxy-test)(CreatedBy->david.clegg)(aws:autoscaling:groupName->alm-uat-ha-proxy-test-ProxyServerAsg-NH9AIMFFWS8E)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-ha-proxy-test/1e28f240-234e-11e6-ba3a-500c3d40ec36)\ni-c37ee67a,ALM_PROD_Sensu_server,t2.medium,10.0.1.141,<No Public Ip Address>,(Name->ALM_PROD_Sensu_server)\ni-874cd80d,ADOP-F_Brazilanalytics_Confluence_v585_TEST,m4.xlarge,10.0.240.174,<No Public Ip Address>,(Name->ADOP-F_Brazilanalytics_Confluence_v585_TEST)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-Brazilanalytics-Confluence-v512x2-TEST/cb0925b0-014e-11e6-9c1e-50a68645aed2)(aws:cloudformation:logical-id->Confluence)(aws:cloudformation:stack-name->ALM-FLEET-Brazilanalytics-Confluence-v512x2-TEST)\ni-78de4ef2,ALM_PROD_Jenkins_slave1_platform_Linux_centos,m3.medium,10.0.1.198,<No Public Ip Address>,(Name->ALM_PROD_Jenkins_slave1_platform_Linux_centos)\ni-889dfa04,ALM-PROD-HA-PROXY-Node,m3.medium,10.0.111.107,52.18.203.141,(CreatedBy->sachin.kumar.singh)(aws:cloudformation:stack-name->ALM-PROD-HA-PROXY)(Name->ALM-PROD-HA-PROXY-Node)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-PROD-HA-PROXY/e1fd85d0-2cb5-11e6-aed0-50faeb52a4d2)(aws:autoscaling:groupName->ALM-PROD-HA-PROXY-ProxyServerAsg-QFUEQJ49ASXJ)(aws:cloudformation:logical-id->ProxyServerAsg)\ni-a6df9b2c,ADOP-F_Trade-Platform_HipChat,m4.large,10.0.241.121,<No Public Ip Address>,(Name->ADOP-F_Trade-Platform_HipChat)\ni-3c6337b6,ADOP-M_PROD_elasticsearch,m3.medium,10.0.1.7,<No Public Ip Address>,(DiscoveryName->ec2-node-es)(aws:autoscaling:groupName->ADOP-M-Prod-elasticsearch-for-bitbucket-ElasticSearchAutoscalingGroup-1GFN7XJYRM18Y)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Prod-elasticsearch-for-bitbucket/55f3aff0-2658-11e6-9741-50a686335cd2)(aws:cloudformation:logical-id->ElasticSearchAutoscalingGroup)(Name->ADOP-M_PROD_elasticsearch)(Enviroment->PROD)(aws:cloudformation:stack-name->ADOP-M-Prod-elasticsearch-for-bitbucket)\ni-b2989639,ALM_PROD_Jenkins_slave_ubuntu,t2.medium,10.0.1.60,<No Public Ip Address>,(Name->ALM_PROD_Jenkins_slave_ubuntu)\ni-43a4f3c9,ALM_PROD_logstash_node,t2.micro,10.0.1.167,<No Public Ip Address>,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-logstash/24671660-ef86-11e5-8b16-50faeb53b42a)(aws:cloudformation:logical-id->AutoScalingGroup)(aws:cloudformation:stack-name->alm-prod-logstash)(Name->ALM_PROD_logstash_node)(aws:autoscaling:groupName->alm-prod-logstash-AutoScalingGroup-CQDTRODILOZ5)(Enviroment->PROD)\ni-14bca49f,alm-prod-docker-replica,m3.large,10.0.0.178,<No Public Ip Address>,(Name->alm-prod-docker-replica)\ni-7e9108f4,ADOP-M-PROD-PROXY-NAT-launched-04-20-2016,m3.large,10.0.0.213,54.154.122.110,(Name->ADOP-M-PROD-PROXY-NAT-launched-04-20-2016)\ni-e738316c,ADOP-F_PAPERBOY_Confluence,m4.large,10.0.240.101,<No Public Ip Address>,(Name->ADOP-F_PAPERBOY_Confluence)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-Paperboy-Confluence/238d2560-c379-11e5-9a4b-50faeb542cd2)(aws:cloudformation:stack-name->ALM-FLEET-Paperboy-Confluence)(aws:cloudformation:logical-id->Confluence)\ni-5c0f59e5,ALM_PROD_Jenkins_slave2_platform_linux_centos,m3.medium,10.0.1.69,<No Public Ip Address>,(aws:cloudformation:logical-id->JenkinsSlave)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/jenkinsProdSlave2/b95d7e40-8243-11e5-bfaf-50fa19418090)(Name->ALM_PROD_Jenkins_slave2_platform_linux_centos)(aws:cloudformation:stack-name->jenkinsProdSlave2)\ni-aae6d922,ALM_PROD_logstash_node,t2.micro,10.0.3.113,<No Public Ip Address>,(Name->ALM_PROD_logstash_node)(aws:cloudformation:logical-id->AutoScalingGroup)(Enviroment->PROD)(aws:autoscaling:groupName->alm-prod-logstash-AutoScalingGroup-CQDTRODILOZ5)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-logstash/24671660-ef86-11e5-8b16-50faeb53b42a)(aws:cloudformation:stack-name->alm-prod-logstash)\ni-8d95f201,ALM-UAT-HA-PROXY-Node,m3.medium,10.0.111.180,52.51.136.123,(Name->ALM-UAT-HA-PROXY-Node)(aws:cloudformation:logical-id->ProxyServerAsg)(aws:autoscaling:groupName->ALM-UAT-HA-PROXY-ProxyServerAsg-16X0UA3J62C36)(aws:cloudformation:stack-name->ALM-UAT-HA-PROXY)(CreatedBy->sachin.kumar.singh)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-UAT-HA-PROXY/76e811a0-2cb2-11e6-b589-50faeb542cd2)\ni-c4a1e04f,ALM_UAT_Bitbucket,m3.medium,10.0.1.132,<No Public Ip Address>,(Name->ALM_UAT_Bitbucket)\ni-e7d9746d,ADOP-F_Brazilanalytics_Jira,m4.large,10.0.240.172,<No Public Ip Address>,(Name->ADOP-F_Brazilanalytics_Jira)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-Brazilanalytics-TOOLS/9be8bfc0-eb6e-11e5-8c2b-500c3d40ec36)(aws:cloudformation:logical-id->Jira)(aws:cloudformation:stack-name->ALM-FLEET-Brazilanalytics-TOOLS)\ni-fb87e077,adop-jenkins-pse-prod-v4-controller-1,r3.large,10.16.113.174,52.50.120.246,(cloudbees:pse:cluster->adop-jenkins-pse-prod-v4)(tiger:version->)(cloudbees:pse:version->)(dna:server_id->adop-jenkins-pse-prod-v4-controller-1)(cloudbees:pse:type->controller)(tiger:type->controller)(tiger:cluster->adop-jenkins-pse-prod-v4)(Name->adop-jenkins-pse-prod-v4-controller-1)\ni-49e716c3,ALM_UAT_Jenkins_new,m4.large,10.0.1.225,<No Public Ip Address>,(client->internal - ADOP/M)(service->Jenkins)(Name->ALM_UAT_Jenkins_new)\ni-f1f18f7b,ADOP-M_PROD_PDI_DEMO,m3.medium,10.0.0.68,54.171.61.52,(Name->ADOP-M_PROD_PDI_DEMO)\ni-662b2dee,ALM_UAT_bitbucket_node,m4.xlarge,10.0.3.62,<No Public Ip Address>,(aws:autoscaling:groupName->alm-uat-bitbucket-7-BitbucketAutoscalingGroup-1XO9X3I8UGCCV)(aws:cloudformation:logical-id->BitbucketAutoscalingGroup)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-bitbucket-7/dcf05b50-00bc-11e6-841c-500c3d47ea36)(Name->ALM_UAT_bitbucket_node)(Enviroment->UAT)(aws:cloudformation:stack-name->alm-uat-bitbucket-7)\ni-2c4378a4,ADOP-M-newsource-node,m4.xlarge,10.0.3.40,<No Public Ip Address>,(Enviroment->UAT)(aws:autoscaling:groupName->ADOP-M-Prod-bitbucket-data-center-BitbucketAutoscalingGroup-1ILJ0YBHV6TBD)(aws:cloudformation:logical-id->BitbucketAutoscalingGroup)(Name->ADOP-M-newsource-node)(aws:cloudformation:stack-name->ADOP-M-Prod-bitbucket-data-center)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Prod-bitbucket-data-center/26f3a240-0e12-11e6-8e83-50a686326636)\ni-abdabb21,ADOP-M_UAT_Jenkins_CB_master,m4.large,10.0.1.120,<No Public Ip Address>,(aws:cloudformation:logical-id->Instance)(Name->ADOP-M_UAT_Jenkins_CB_master)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-UAT-Jenkins-CB-master/916f83a0-0ba6-11e6-96ca-50a68645b2d2)(aws:cloudformation:stack-name->ADOP-M-UAT-Jenkins-CB-master)\ni-de451b54,ADOP-M_Selenium_MI_IE11,t2.medium,10.0.1.188,<No Public Ip Address>,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Selenium-MI-IE11/8cd0a8e0-2bec-11e6-a2b6-50faea5d48d2)(aws:cloudformation:logical-id->Windows7)(Name->ADOP-M_Selenium_MI_IE11)(aws:cloudformation:stack-name->ADOP-M-Selenium-MI-IE11)\ni-c18ab249,ALM_UAT_nexus_proxy_node,t2.micro,10.0.3.63,<No Public Ip Address>,(aws:cloudformation:stack-name->alm-uat-nexus-proxy-test)(aws:cloudformation:logical-id->NexusProxyAutoscalingGroup)(Name->ALM_UAT_nexus_proxy_node)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-nexus-proxy-test/8e3d2270-fb1e-11e5-9949-50faeb539036)(aws:autoscaling:groupName->alm-uat-nexus-proxy-test-NexusProxyAutoscalingGroup-1R753WQ3PRREI)(Enviroment->UAT)\ni-0076c28a,ADOP-F_Ford_Jira,m4.large,10.0.240.240,<No Public Ip Address>,(aws:cloudformation:logical-id->Jira)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-Ford-Tools/45ca7450-f03f-11e5-8399-50faeb52a4d2)(Name->ADOP-F_Ford_Jira)(aws:cloudformation:stack-name->ALM-FLEET-Ford-Tools)\ni-09533ba8,ALM_PROD_BRIDGE,t2.micro,10.0.0.233,52.17.163.42,(service->Bridge)(Name->ALM_PROD_BRIDGE)(client->internal - ADOP/M)\ni-eaf49860,ADOP-M-newsource-nfs,m4.xlarge,10.0.1.218,<No Public Ip Address>,(aws:cloudformation:logical-id->BitbucketNFS)(aws:cloudformation:stack-name->ADOP-M-Prod-bitbucket-data-center)(Name->ADOP-M-newsource-nfs)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Prod-bitbucket-data-center/26f3a240-0e12-11e6-8e83-50a686326636)\ni-a082a719,ALM_UAT_Jenkins_slave_centos,m3.medium,10.0.1.251,<No Public Ip Address>,(Name->ALM_UAT_Jenkins_slave_centos)(aws:cloudformation:logical-id->JenkinsSlave)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/almuatjenkinsslave/ac9169d0-86e2-11e5-9f63-50fa18d71436)(aws:cloudformation:stack-name->almuatjenkinsslave)\ni-df4ccf7e,ALM_PROD_Jira,m4.large,10.0.1.200,<No Public Ip Address>,(aws:cloudformation:logical-id->Jira)(Name->ALM_PROD_Jira)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-atlassian-jira-wiki-mysql-mssql/43dab750-41ed-11e5-903f-50fa136da090)(service->Jira)(client->shared service - ADOP/M)(aws:cloudformation:stack-name->alm-atlassian-jira-wiki-mysql-mssql)\ni-f29ed578,uat-elasticsearch-node,m3.medium,10.0.1.179,<No Public Ip Address>,(aws:autoscaling:groupName->uat-elasticsearch-auto-scale-group)(Name->uat-elasticsearch-node)\ni-981f1910,ALM_UAT_bitbucket_node,m4.xlarge,<Error Fetching Private Ip>,<No Public Ip Address>,(aws:autoscaling:groupName->alm-uat-bitbucket-7-BitbucketAutoscalingGroup-1XO9X3I8UGCCV)(Name->ALM_UAT_bitbucket_node)(aws:cloudformation:logical-id->BitbucketAutoscalingGroup)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-bitbucket-7/dcf05b50-00bc-11e6-841c-500c3d47ea36)(aws:cloudformation:stack-name->alm-uat-bitbucket-7)(Enviroment->UAT)\ni-fe92d974,uat-elasticsearch-node,m3.medium,10.0.1.248,<No Public Ip Address>,(aws:autoscaling:groupName->uat-elasticsearch-auto-scale-group)(Name->uat-elasticsearch-node)\ni-bce0a234,ALM_CI_ADOP_Launcher,t2.micro,10.0.0.225,<No Public Ip Address>,(Name->ALM_CI_ADOP_Launcher)\ni-ce86e142,adop-jenkins-pse-prod-v4-controller-2,r3.large,10.16.163.69,52.31.211.170,(Name->adop-jenkins-pse-prod-v4-controller-2)(cloudbees:pse:cluster->adop-jenkins-pse-prod-v4)(tiger:version->)(tiger:cluster->adop-jenkins-pse-prod-v4)(cloudbees:pse:version->)(cloudbees:pse:type->controller)(dna:server_id->adop-jenkins-pse-prod-v4-controller-2)(tiger:type->controller)\ni-3c6b2ab4,ALM_PROD_Jenkins_slave_node_2,m3.medium,10.0.3.152,<No Public Ip Address>,(aws:cloudformation:stack-name->alm-prod-jenkins-slaves)(Name->ALM_PROD_Jenkins_slave_node_2)(aws:cloudformation:logical-id->JenkinsSlaveNode2)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-jenkins-slaves/764fcb40-031b-11e6-aae4-50a686343cd2)\ni-21f642ad,ALM_UAT_proxy_node,m3.medium,10.0.2.65,52.18.193.47,(aws:cloudformation:stack-name->ADOP-M-UAT-Proxy)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-UAT-Proxy/79071120-07ff-11e6-beba-50faeb52f036)(aws:autoscaling:groupName->ADOP-M-UAT-Proxy-AutoscalingGroup-1VVJ0IDPFGEUW)(aws:cloudformation:logical-id->AutoscalingGroup)(Enviroment->UAT)(Name->ALM_UAT_proxy_node)\ni-79fa7af3,ADOP/M_PROD_Vault_c,m3.medium,10.0.0.158,52.48.104.228,(Name->ADOP/M_PROD_Vault_c)(service->Vault)(client->Shared service - ADOP/M)\ni-f80f0970,ALM-PROD-HA-PROXY-Node,m3.medium,10.0.112.140,52.49.45.157,(aws:cloudformation:stack-name->ALM-PROD-HA-PROXY)(CreatedBy->sachin.kumar.singh)(aws:cloudformation:logical-id->ProxyServerAsg)(aws:autoscaling:groupName->ALM-PROD-HA-PROXY-ProxyServerAsg-QFUEQJ49ASXJ)(Name->ALM-PROD-HA-PROXY-Node)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-PROD-HA-PROXY/e1fd85d0-2cb5-11e6-aed0-50faeb52a4d2)\ni-9451861e,ADOP-M_PROD_HipChat,m4.large,10.0.1.157,<No Public Ip Address>,(Name->ADOP-M_PROD_HipChat)\ni-b1a9ef3b,ADOP-F_AVS_Jira,m4.large,10.0.241.170,<No Public Ip Address>,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-F-AVS-Jira-TOOL/7dd119f0-1dc4-11e6-bd21-500c3d3c2c9a)(aws:cloudformation:logical-id->Jira)(Name->ADOP-F_AVS_Jira)(aws:cloudformation:stack-name->ADOP-F-AVS-Jira-TOOL)\ni-51a904db,Nexus-IQ,t2.medium,10.0.1.61,<No Public Ip Address>,(Name->Nexus-IQ)\ni-f6f6337c,ALM_PROD_Dockerhub_new,m3.large,10.0.1.55,<No Public Ip Address>,(Name->ALM_PROD_Dockerhub_new)\ni-dc4fcc7d,ALM_PROD_Confluence,m4.xlarge,10.0.1.201,<No Public Ip Address>,(aws:cloudformation:logical-id->Confluence)(aws:cloudformation:stack-name->alm-atlassian-jira-wiki-mysql-mssql)(Name->ALM_PROD_Confluence)(client->shared service - ADOP/M)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-atlassian-jira-wiki-mysql-mssql/43dab750-41ed-11e5-903f-50fa136da090)(service->Confluence)\ni-fc6ff076,ADOP-M_PROD_Jenkins_CB_master,m4.large,10.0.1.119,<No Public Ip Address>,(aws:cloudformation:logical-id->Instance)(aws:cloudformation:stack-name->ADOP-M-PROD-Jenkins-CB-master)(Name->ADOP-M_PROD_Jenkins_CB_master)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-PROD-Jenkins-CB-master/692105e0-0624-11e6-aed2-50a686335cd2)\ni-251c59ae,ADOP-F_ACP_Confluence,m4.large,10.0.240.39,<No Public Ip Address>,(aws:cloudformation:logical-id->Confluence)(aws:cloudformation:stack-name->ALM-FLEET-ACP-Confluence)(Name->ADOP-F_ACP_Confluence)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-ACP-Confluence/1b1d4d80-a329-11e5-b25d-500c423358d2)\ni-4040c0ca,ADOP-M_PROD_OpenVPN,m3.medium,10.0.0.189,52.17.160.177,(Name->ADOP-M_PROD_OpenVPN)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-PROD-OpenVPN/181f5950-fb19-11e5-a256-50a686326636)(aws:cloudformation:stack-name->ADOP-M-PROD-OpenVPN)(aws:cloudformation:logical-id->OpenVPN)\ni-6ccbedd5,ALM_UAT_Sensu_Graphite,t2.micro,10.0.1.73,<No Public Ip Address>,(Name->ALM_UAT_Sensu_Graphite)(client->internal - ADOP/M)(service->Sensu+Graphite)\ni-13d1b6b2,ALM_UAT_BRIDGE,t2.micro,10.0.0.221,52.17.31.162,(service->Bridge)(Name->ALM_UAT_BRIDGE)(client->internal - ADOP/M)\ni-98754013,ALM_PROD_Bitbucket,m3.xlarge,10.0.1.136,<No Public Ip Address>,(Name->ALM_PROD_Bitbucket)\ni-8bbfde2a,ALM_UAT_Confluence,m4.xlarge,10.0.1.103,<No Public Ip Address>,(service->Confluence)(Name->ALM_UAT_Confluence)(client->internal - ADOP/M)\ni-4c791fc6,ADOP-M_Selenium_Grid_Kicker_Node_IE11,t2.medium,10.0.1.189,<No Public Ip Address>,(Name->ADOP-M_Selenium_Grid_Kicker_Node_IE11)(aws:cloudformation:logical-id->Windows7)(aws:cloudformation:stack-name->ADOP-M-Selenium-Grid-Kicker-Node-IE11)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Selenium-Grid-Kicker-Node-IE11/fddd6de0-0ae3-11e6-9882-500c4265eed2)\ni-73bbfdf9,ADOP-F_AVS_Confluence,m4.large,10.0.241.171,<No Public Ip Address>,(Name->ADOP-F_AVS_Confluence)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-F-AVS-Confluence-TOOL/5783bef0-1dca-11e6-a35a-500c3cd570d2)(aws:cloudformation:stack-name->ADOP-F-AVS-Confluence-TOOL)(aws:cloudformation:logical-id->Confluence)\ni-3e89b1b6,ALM_UAT_nexus_master,t2.micro,10.0.3.80,<No Public Ip Address>,(aws:cloudformation:stack-name->alm-uat-nexus-master)(Name->ALM_UAT_nexus_master)(aws:autoscaling:groupName->alm-uat-nexus-master-NexusMasterAutoscalingGroup-8HW72S41PQ3Y)(aws:cloudformation:logical-id->NexusMasterAutoscalingGroup)(Enviroment->UAT)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-nexus-master/441e1d10-fa75-11e5-888b-500c3d47ea36)\ni-b82ab732,ADOP-M_UAT_Jenkins_CloudBees,m4.large,10.0.1.129,<No Public Ip Address>,(Name->ADOP-M_UAT_Jenkins_CloudBees)\ni-847f190e,ADOP-M_Selenium_Grid_Kicker,t2.medium,10.0.1.190,<No Public Ip Address>,(Name->ADOP-M_Selenium_Grid_Kicker)(aws:cloudformation:stack-name->ADOP-M-Selenium-Grid-Kicker)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Selenium-Grid-Kicker/3fbc5cc0-0ae0-11e6-aa8c-50a6863404d2)(aws:cloudformation:logical-id->CentOS7)\ni-7624a0fa,<Un-Named>,m4.xlarge,10.0.2.108,52.51.66.234,<No Tags>\ni-10bf3f9a,ADOP-M_UAT_OpenVPN,m3.medium,10.0.0.189,52.16.232.17,(Name->ADOP-M_UAT_OpenVPN)(aws:cloudformation:stack-name->ADOP-M-UAT-OpenVPN)(aws:cloudformation:logical-id->OpenVPN)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-UAT-OpenVPN/aa1d6c30-fb18-11e5-b09f-500c4241c2fe)\ni-f2905a78,ADOP-F_ACP_HipChat,m4.large,10.0.240.40,<No Public Ip Address>,(Name->ADOP-F_ACP_HipChat)\ni-00de738a,ALM_FLEET_Brazilanalytics_Confluence_v512_NO_DOCKER_TEST,m4.large,10.0.240.173,<No Public Ip Address>,(Name->ALM_FLEET_Brazilanalytics_Confluence_v512_NO_DOCKER_TEST)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ALM-FLEET-Brazilanalytics-TOOLS/9be8bfc0-eb6e-11e5-8c2b-500c3d40ec36)(aws:cloudformation:logical-id->Confluence)(aws:cloudformation:stack-name->ALM-FLEET-Brazilanalytics-TOOLS)\ni-1d079d97,ADOP-M_PROD_Jenkins_CB_docker_slaves,m3.medium,10.0.1.191,<No Public Ip Address>,(Name->ADOP-M_PROD_Jenkins_CB_docker_slaves)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/ADOP-M-Jenkins-CB-docker-slaves/f810b330-0887-11e6-a535-50faeb539036)(aws:cloudformation:logical-id->JenkinsSlaveNode1)(aws:cloudformation:stack-name->ADOP-M-Jenkins-CB-docker-slaves)\ni-174fda9d,ALM_UAT_bitbucket_nfs,m4.large,10.0.1.169,<No Public Ip Address>,(Name->ALM_UAT_bitbucket_nfs)(aws:cloudformation:logical-id->BitbucketNFS)(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-uat-bitbucket-7/dcf05b50-00bc-11e6-841c-500c3d47ea36)(aws:cloudformation:stack-name->alm-uat-bitbucket-7)\ni-cf86e143,adop-jenkins-pse-prod-v4-worker-2,r3.large,10.16.149.23,52.208.25.173,(Name->adop-jenkins-pse-prod-v4-worker-2)(dna:server_id->adop-jenkins-pse-prod-v4-worker-2)(cloudbees:pse:type->controller)(tiger:version->)(tiger:cluster->adop-jenkins-pse-prod-v4)(tiger:type->worker)(cloudbees:pse:version->)(cloudbees:pse:cluster->adop-jenkins-pse-prod-v4)\ni-8d581006,ADOP-F_Windows,t2.micro,10.0.240.50,<No Public Ip Address>,(Name->ADOP-F_Windows)\ni-b8d60a32,ALM_UAT_Proxy_split - NATs only atm,m3.medium,10.0.0.7,52.16.144.60,(Name->ALM_UAT_Proxy_split - NATs only atm)\ni-68169ee0,ALM_UAT_logstash,t2.micro,10.0.3.76,<No Public Ip Address>,(aws:autoscaling:groupName->uat_logstashValidCopy)(Name->ALM_UAT_logstash)\ni-ed90e466,ALM_UAT_SonarQube,t2.medium,10.0.1.109,<No Public Ip Address>,(Name->ALM_UAT_SonarQube)\ni-b400413c,ALM_UAT_Bitbucket_migration,m4.large,10.0.3.178,<No Public Ip Address>,(Name->ALM_UAT_Bitbucket_migration)\ni-3e6b2ab6,ALM_PROD_Jenkins_slave_node_4,m3.medium,10.0.3.248,<No Public Ip Address>,(aws:cloudformation:stack-id->arn:aws:cloudformation:eu-west-1:714964729227:stack/alm-prod-jenkins-slaves/764fcb40-031b-11e6-aae4-50a686343cd2)(Name->ALM_PROD_Jenkins_slave_node_4)(aws:cloudformation:logical-id->JenkinsSlaveNode4)(aws:cloudformation:stack-name->alm-prod-jenkins-slaves)\n\n",
+					"file": "/home/dxc/ec2-audit/ec2-list.csv",
+					"file_size": 33750,
+					"file_write_time": 1465319255000000,
+					"settings":
+					{
+						"buffer_size": 33751,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/dxc/ec2-audit/json-parse.py",
+					"settings":
+					{
+						"buffer_size": 1627,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 392.0,
+				"selected_items":
+				[
+				],
+				"width": 392.0
+			},
+			"console":
+			{
+				"height": 125.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 0,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/dxc/ec2-audit/ec2-list.csv",
+							"settings":
+							{
+								"buffer_size": 33751,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										33751,
+										33751
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 3047.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/dxc/ec2-audit/json-parse.py",
+							"settings":
+							{
+								"buffer_size": 1627,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1574,
+										1574
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Python/Python.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 135.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,0,0,0,0,0,18,1596,775,1600,796",
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
