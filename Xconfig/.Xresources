@@ -1,61 +1,44 @@
-URxvt*title: urxvt
-URxvt*termName: rxvt-256color
-URxvt*secondaryscroll: true
-URxvt*matcher.button: 1
-URxvt*cursorBlink: true
-URxvt*cursorUnderline: true
-URxvt*mapAlert: true
-URxvt*visualBell: true
-URxvt*urgentOnBell: true
-!URxvt*inheritPixmap: true
-!URxvt*tintColor: #000000
-!URxvt*shading: 88
- 
-URxvt*transparent: true 
-URxvt*shading: 20
-URxvt*saveLines: 12000
-URxvt.font: xft:mono:medium:size=10
-URxvt.boldFont: xft:Droid Sans Mono for Powerline:size=10
-URxvt*scrollBar: false
-URxvt*geometry: 90x21
-URxvt.iconFile: /home/eregus/.icons/Faenza/apps/scalable/utilities-terminal.svg
+*color0:                    gray20
+*color1:                    orangered1
+*color2:                    chartreuse1
+*color3:                    gold1
+*color4:                    steelblue1
+*color5:                    palevioletred1
+*color6:                    deepskyblue1
+*color7:                    gray60
 
-URxvt.iso14755: False
- 
-URxvt.perl-lib: /usr/lib/urxvt/perl
-URxvt.perl-ext-common: default,matcher,clipboard,selection-autotransform
-URxvt.keysym.C-C: perl:clipboard:copy
-URxvt.keysym.C-V: perl:clipboard:paste
-URxvt.keysym.C-Z: perl:clipboard:paste_escaped
-URxvt.clipboard.copycmd: xsel -ib
-URxvt.clipboard.pastecmd: xsel -ob
-URxvt.url-launcher: /usr/bin/firefox-nightly
-URxvt.matcher.button: 1
-*depth: 32 
-*background:    [30]#1c1c1c
-*foreground:    #c5c5c5
-! black
-*color0:        #1C1C1C
-*color8:        #666666
-! red
-*color1:        #ff005b
-*color9:        #ff00a0
-! green
-*color2:        #cee318
-*color10:       #ccff00
-! yellow
-*color3:        #ffe755
-*color11:       #ff9f00
-! blue
-*color4:        #048ac7
-*color12:       #48c6ff
-! magenta
-*color5:        #833c9f
-*color13:       #be67e1
-! cyan
-*color6:        #0ac1cd
-*color14:       #63e7f0
-! white
-*color7:        #e5e5e5
-*color15:       #f3f3f3
+*color8:                    gray40
+*color9:                    coral1
+*color10:                   olivedrab1
+*color11:                   khaki1
+*color12:                   skyblue1
+*color13:                   plum1
+*color14:                   turquoise1
+*color15:                   gray80
+
+*foreground:                rgb:fa/fa/fa
+*background:                rgb:2d/2d/2d
+
+!---urxvt---!
+urxvt*geometry:             120x36
+urxvt*saveLines:            10000
+urxvt*font:                 xft:monospace:size=10:antialias=true
+urxvt*buffered:             true
+urxvt*cursorBlink:          true
+
+urxvt*visualBell:           false
+urxvt*loginShell:           false
+
+!---urxvt-scrollbar---!
+urxvt*scrollBar:            false
+urxvt*scrollstyle:          rxvt
+urxvt*scrollBar_right:      true
+urxvt*scrollBar_floating:   true
+urxvt*scrollColor:          #404040
+
+!---urxvt scroll behaviour---!
+urxvt*jumpScroll:           true
+urxvt*scrollTtyOutput:      false
+urxvt*scrollWithBuffer:     true
+urxvt*scrollTtyKeypress:    true
 
