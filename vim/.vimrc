@@ -5,8 +5,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " Plugins Go Here "
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on
+" Setting tabs to be 4 spaces "
+set tabstop=2
+set shiftwidth=2
+set expandtab
 " Key Remapping "
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
