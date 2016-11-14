@@ -9,6 +9,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wesq3/vim-windowswap'
+Plugin 'valloric/youcompleteme'
 call vundle#end()
 filetype plugin indent on
 " Setting tabs to be 4 spaces "
