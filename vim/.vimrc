@@ -6,6 +6,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins Go Here "
 Plugin 'pangloss/vim-javascript'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'bling/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wesq3/vim-windowswap'
