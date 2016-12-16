@@ -18,6 +18,10 @@ filetype plugin indent on
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" Configuring airline vim "
+let g:airline#extensions#tabline#enabled = 1
+
 "Open Nerd tree when vim is not given a file to open with"
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
