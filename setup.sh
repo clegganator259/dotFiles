@@ -1,4 +1,5 @@
 BASEDIR=$(cd "$(dirname $0)" && pwd)
+#Installs stuff
 pacman -S i3 --noconfirm
 pacman -S dmenu --noconfirm
 pacman -S vim --noconfirm
