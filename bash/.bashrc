@@ -35,7 +35,7 @@ colors() {
 ###                                 MY FUNCTIONS                                  ###
 #####################################################################################
 
-export PS1="\[\e[0;34m\][\[\e[0;33m\]\t \[\e[1;32m\]\u@\h \[\e[0;33m\]\w\e[0;34m\]]\n \[\e[0;34m\]λ \[$(tput sgr0)\]"
+export PS1="\[\e[0;34m\][\[\e[0;93m\]\t \[\e[1;32m\]\u@\h \[\e[0;93m\]\w\e[0;34m\]]\n \[\e[0;34m\]λ \[$(tput sgr0)\]"
 
 
 #
@@ -49,3 +49,8 @@ commit-file() {
   git commit -m "$2"
 }
 
+
+wmctrl -r "urxvt -e tmux" -t 3
+export JAVA_HOME=/usr/lib/jvm/default
+PATH="$HOME/bin:$PATH"
+up() { cd $(eval printf '../'%.0s {1..$1});}
