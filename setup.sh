@@ -1,11 +1,11 @@
 BASEDIR=$(cd "$(dirname $0)" && pwd)
 #Installs stuff
-pacman -S i3 --noconfirm
-pacman -S dmenu --noconfirm
-pacman -S vim --noconfirm
-pacman -S rxvt-unicode --noconfirm
-ln -nsf $BASEDIR/i3 $1/.config
 ln -nsf $BASEDIR/vim/.vimrc $1/.vimrc
 ln -nsf $BASEDIR/Xconfig/.Xresources $1/.Xresources
+ln -nsf $BASEDIR/bash/.bashrc $1/.bashrc
+ln -nsf $BASEDIR/vim/.vimrc $1/.vimrc
+ln -nsf $BASEDIR/tmux/.tmux.conf $1/.tmux.conf
 ln -nsf $BASEDIR/Xconfig/.xprofile $1/.xprofile
-ln -nsf $BASEDIR/urxvt/clipboard /usr/lib/urxvt/perl/clipboard
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+vim +PluginInstall +qall

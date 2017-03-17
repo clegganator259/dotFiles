@@ -35,6 +35,8 @@ colors() {
 ###                                 MY FUNCTIONS                                  ###
 #####################################################################################
 
+export PS1="\[\e[0;34m\][\[\e[0;33m\]\t \[\e[1;32m\]\u@\h \[\e[0;33m\]\w\e[0;34m\]]\n \[\e[0;34m\]λ \[$(tput sgr0)\]"
+
 
 #
 # Adds and commits a single file
@@ -46,8 +48,4 @@ commit-file() {
   git add $1
   git commit -m "$2"
 }
-
-[[ -f ~/.extend.bashrc ]] && . ~/.extend.bashrc
-
-[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
