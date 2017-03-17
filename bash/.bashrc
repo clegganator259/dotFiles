@@ -32,10 +32,10 @@ colors() {
 }
 
 #####################################################################################
-###                                 MY FUNCTIONS                                  ###
+###                                 MY CONFIG                                     ###
 #####################################################################################
 
-export PS1="\[\e[0;34m\][\[\e[0;93m\]\t \[\e[1;32m\]\u@\h \[\e[0;93m\]\w\e[0;34m\]]\n \[\e[0;34m\]λ \[$(tput sgr0)\]"
+export PS1="\[\e[1;32m\][\[\e[033m\]\t \[\e[1;32m\]\u@\h \[\e[0;36m\]\w\e[1;32m\]]\n \[\e[0;34m\]λ \[$(tput sgr0)\]"
 
 
 #
@@ -43,14 +43,43 @@ export PS1="\[\e[0;34m\][\[\e[0;93m\]\t \[\e[1;32m\]\u@\h \[\e[0;93m\]\w\e[0;34m
 # arg1: the file to commit
 # arg2: the commit message
 #
+
+
+wmctrl -r "urxvt -e tmux" -t 3
+export JAVA_HOME=/usr/lib/jvm/default
+PATH="$HOME/bin:$PATH"
+
+#####################################################################################
+###                                 MY FUNCTIONS                                  ###
+#####################################################################################
+
 commit-file() {
   echo "committing message" $1 "with message" $2
   git add $1
   git commit -m "$2"
 }
 
+up() { 
+  cd $(eval printf '../'%.0s {1..$1});
+}
 
-wmctrl -r "urxvt -e tmux" -t 3
-export JAVA_HOME=/usr/lib/jvm/default
-PATH="$HOME/bin:$PATH"
-up() { cd $(eval printf '../'%.0s {1..$1});}
+reconfig(){ 
+  source ~/.bashrc;
+  tmux source-file ~/.tmux.conf;
+}
+
+WAYPOINTS=(~ ~ ~ ~ ~ ~ ~ ~ ~ ~)
+
+waypoint(){
+  WAYPOINTS[$1]=`pwd`
+}
+
+jumpto(){
+  case $1 in
+    cogs) cd ~/Documents/InventiveCogs ;;
+    dotfiles) cd ~/DotFiles ;; 
+    [0-9]) cd ${WAYPOINTS[$1]} ;;
+    *) echo "No shortcut for" $1;;
+  esac
+}
+alias jt=jumpto
