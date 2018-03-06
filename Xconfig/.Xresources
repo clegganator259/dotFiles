@@ -36,6 +36,8 @@ urxvt*scrollBar_right:      true
 urxvt*scrollBar_floating:   true
 urxvt*scrollColor:          #404040
 
+urxvt*termName: xterm-256color
+
 !---urxvt scroll behaviour---!
 urxvt*jumpScroll:           true
 urxvt*scrollTtyOutput:      false

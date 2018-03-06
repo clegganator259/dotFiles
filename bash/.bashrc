@@ -45,7 +45,6 @@ export PS1="\[\e[1;32m\][\[\e[033m\]\t \[\e[1;32m\]\u@\h \[\e[0;36m\]\w\e[1;32m\
 #
 
 
-wmctrl -r "urxvt -e tmux" -t 3
 export JAVA_HOME=/usr/lib/jvm/default
 PATH="$HOME/bin:$PATH"
 
@@ -82,4 +81,35 @@ jumpto(){
     *) echo "No shortcut for" $1;;
   esac
 }
+# Bash related aliases
+alias bashrc="vim ~/.bashrc && reconfig"
+alias vimrc="vim ~/.vimrc && reconfig"
+alias tmuxrc="vim ~/.tmux.conf && reconfig"
 alias jt=jumpto
+
+# Virtualenv aliases
+alias avenv=". ./venv/bin/activate"
+alias mvenv="virtualenv venv"
+alias dvenv="deactivate"
+
+# Django aliases
+
+function django {
+    avenv; python manage.py $@; dvenv
+}
+
+function dmr {
+    avenv; django runserver $@; dvenv
+}
+
+function dms {
+    avenv; django shell $@; dvenv
+}
+
+function dmt {
+    avenv && django test -k $@; dvenv
+}
+
+function dmt-k {
+    avenv && django test $@; dvenv
+}
