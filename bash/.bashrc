@@ -75,7 +75,20 @@ waypoint(){
 
 jumpto(){
   case $1 in
-    cogs) cd ~/Documents/InventiveCogs ;;
+    akommo) cd ~/Documents/akommo ;;
+    admiral) cd ~/Documents/admiral ;;
+    ardbeg) cd ~/Documents/ardbeg ;;
+    eventhive) cd ~/Documents/eventhiveplus-concept ;;
+    mwac) cd ~/Documents/mwac/mwac ;;
+    native) cd ~/Documents/native-finance;;
+    faq) cd ~/Documents/faq;;
+    admin) cd ~/Documents/admin/cotidia/admin;;
+    account) cd ~/Documents/account/cotidia/account;;
+    socialshare) cd ~/Documents/social-share/cotidia/socialshare;;
+    magicw) cd ~/Documents/magicw ;;
+    stationery) cd ~/Documents/magic-whiteboard-stationery ;;
+    exotic) cd ~/Documents/exoticdirect ;;
+    mandala) cd ~/Documents/mandala ;;
     dotfiles) cd ~/DotFiles ;; 
     [0-9]) cd ${WAYPOINTS[$1]} ;;
     *) echo "No shortcut for" $1;;
@@ -86,6 +99,26 @@ alias bashrc="vim ~/.bashrc && reconfig"
 alias vimrc="vim ~/.vimrc && reconfig"
 alias tmuxrc="vim ~/.tmux.conf && reconfig"
 alias jt=jumpto
+alias pls='sudo "$BASH" -c "$(history -p !!)"'
+
+# Note taking aliases
+n() {
+    title="$*"
+    title_slug=`sed -e "s/ /_/g" <<< "$title"`
+    filename=~/notes/"[`date '+%Y-%m-%d %H:%M'`]$title_slug".md
+    echo "## [`date '+%Y-%m-%d %H:%M'`] $title" > "$filename"
+    vim "$filename"
+    echo -e "\n" >> "$filename"
+}
+
+ncat() {
+    mdless ~/notes/*
+}
+
+nls() {
+    ls -c ~/notes/ | grep "$*"
+
+}
 
 # Virtualenv aliases
 alias avenv=". ./venv/bin/activate"
@@ -103,7 +136,7 @@ function dmr {
 }
 
 function dms {
-    avenv; django shell $@; dvenv
+    avenv; django shell $@
 }
 
 function dmt {
@@ -113,3 +146,55 @@ function dmt {
 function dmt-k {
     avenv && django test $@; dvenv
 }
+
+function tadd {
+    task add project:$@
+}
+
+function tlog {
+    task log project:$@
+}
+
+function tlist {
+    if [ $# -eq 0 ]
+    then
+        task list
+    else
+        task list project:$@
+    fi
+
+}
+
+function tcomplete {
+    if [ $# -eq 0 ]
+    then
+        task completed
+    else
+        task completed project:$@
+    fi
+
+}
+
+function tdone {
+    task $@ done
+}
+
+function git-cleanup {
+    git_branch="$(git rev-parse --abbrev-ref HEAD)"
+    read -p "To confirm type the current branch name ($git_branch): " user_branch
+    if [ "$user_branch" == "$git_branch" ]
+    then
+        git branch --merged | egrep -v "(^\*|master|dev|develop)" | xargs git branch -d
+    else
+        echo "Cancelled"
+    fi
+}
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# GO bindings
+# Adds go to path
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:/usr/local/go/bin
+
