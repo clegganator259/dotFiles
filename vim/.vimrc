@@ -2,32 +2,38 @@ set number
 set nocompatible
 syntax on
 filetype off
+let mapleader = ","
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " Plugins Go Here "
-Plugin 'pangloss/vim-javascript'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'bling/vim-airline'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wesq3/vim-windowswap'
 Plugin 'valloric/youcompleteme'
 Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'valloric/matchtagalways'
 Plugin 'kien/ctrlp.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'glench/vim-jinja2-syntax'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'mileszs/ack.vim'
+
+" Python plugins
+Plugin 'glench/vim-jinja2-syntax'
 Plugin 'edc/python-indent'
 Plugin 'nvie/vim-flake8'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'mileszs/ack.vim'
+
+" Clojure plugins
+Plugin 'tpope/vim-fireplace'
+Plugin 'paredit.vim'
+Plugin 'venantius/vim-cljfmt'
+
+
+
 
 call vundle#end()
 syntax enable
@@ -48,6 +54,12 @@ colorscheme slate
 
 " NERDTree settings "
 let g:NERDTreeQuitOnOpen = 1
+
+"wordwrap settings"
+au BufNewFile,BufRead *.md
+    set textwidth=80 
+    set formatoptions-=t
+    
 
 
 let g:pymode_python = 'python3'
@@ -72,20 +84,9 @@ au BufNewFile,BufRead *.py
     \ setlocal fileformat=unix |
     \ setlocal fileformat=unix |
     \ let b:indentLine_enabled = 0
-"python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir = os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  execfile(activate_this, dict(__file__=activate_this))
-EOF
 " Python syntax highlighting
 let python_highlight_all=1
 syntax on
-" Enable folding with the spacebar
-nnoremap <space> za
 
 " Syntastic settings "
 
@@ -120,7 +121,7 @@ map <left> <nop>
 map <right> <nop>
 
 " Highlight TODO, FIXME, NOTE, etc.
-highlight HotPink ctermbg=205 guibg=hotpink guifg=black ctermfg=black
+highlight HotPink ctermbg=205 guibg=pink guifg=black ctermfg=red
 if has("autocmd")
   if v:version > 701
     autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|XXX\|BUG\|HACK\)')
