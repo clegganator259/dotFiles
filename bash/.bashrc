@@ -3,6 +3,7 @@
 #
 
 [[ $- != *i* ]] && return
+export EDITOR=vim
 
 colors() {
 	local fgc bgc vals seq0
@@ -48,6 +49,8 @@ export PS1="\[\e[1;32m\][\[\e[033m\]\t \[\e[1;32m\]\u@\h \[\e[0;36m\]\w\e[1;32m\
 export JAVA_HOME=/usr/lib/jvm/default
 PATH="$HOME/bin:$PATH"
 
+set -o vi
+
 #####################################################################################
 ###                                 MY FUNCTIONS                                  ###
 #####################################################################################
@@ -82,7 +85,7 @@ jumpto(){
     mwac) cd ~/Documents/mwac/mwac ;;
     native) cd ~/Documents/native-finance;;
     faq) cd ~/Documents/faq;;
-    admin) cd ~/Documents/admin/cotidia/admin;;
+    admin) cd ~/Documents/admin;;
     account) cd ~/Documents/account/cotidia/account;;
     socialshare) cd ~/Documents/social-share/cotidia/socialshare;;
     magicw) cd ~/Documents/magicw ;;
@@ -124,6 +127,7 @@ nls() {
 alias avenv=". ./venv/bin/activate"
 alias mvenv="virtualenv venv"
 alias dvenv="deactivate"
+alias pyhton="python"
 
 # Django aliases
 
@@ -194,7 +198,8 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 # GO bindings
 # Adds go to path
-export GOROOT=$HOME/go
+export GOROOT=/usr/local/Cellar/go/1.10.1/libexec/
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin
-export PATH=$PATH:/usr/local/go/bin
 
+alias readlink=greadlink
