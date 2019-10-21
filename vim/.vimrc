@@ -12,7 +12,6 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wesq3/vim-windowswap'
-Plugin 'valloric/youcompleteme'
 Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
@@ -21,6 +20,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'mileszs/ack.vim'
+Plugin 'prabirshrestha/async.vim'
+Plugin 'prabirshrestha/vim-lsp'
+Plugin 'maralla/completor.vim'
 
 " Python plugins
 Plugin 'glench/vim-jinja2-syntax'
@@ -31,9 +33,6 @@ Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fireplace'
 Plugin 'paredit.vim'
 Plugin 'venantius/vim-cljfmt'
-
-
-
 
 call vundle#end()
 syntax enable
@@ -88,6 +87,20 @@ au BufNewFile,BufRead *.py
 let python_highlight_all=1
 syntax on
 
+" ================= Rust settings ===================
+let g:autofmt_autosave = 1
+if executable('rls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'rls',
+        \ 'cmd': {server_info->['rustup', 'run', 'nightly', 'rls']},
+        \ 'whitelist': ['rust'],
+        \ })
+endif
+
+" Language server settings "  
+let g:LanguageClient_autoStart = 1
+nnoremap <leader>lcs :LanguageClientStart<CR>
+
 " Syntastic settings "
 
 set statusline+=%#warningmsg#
@@ -135,42 +148,3 @@ if has("autocmd")
   if v:version > 701
   endif
 endif
-
-" Uses silver surfer for ackvim if available
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
-" Kills all buffers not currently open "
-function! Wipeout()
-  " list of *all* buffer numbers
-  let l:buffers = range(1, bufnr('$'))
-
-  " what tab page are we in?
-  let l:currentTab = tabpagenr()
-  try
-    " go through all tab pages
-    let l:tab = 0
-    while l:tab < tabpagenr('$')
-      let l:tab += 1
-
-      " go through all windows
-      let l:win = 0
-      while l:win < winnr('$')
-        let l:win += 1
-        " whatever buffer is in this window in this tab, remove it from
-        " l:buffers list
-        let l:thisbuf = winbufnr(l:win)
-        call remove(l:buffers, index(l:buffers, l:thisbuf))
-      endwhile
-    endwhile
-
-    " if there are any buffers left, delete them
-    if len(l:buffers)
-      execute 'bwipeout' join(l:buffers)
-    endif
-  finally
-    " go back to our original tab page
-    execute 'tabnext' l:currentTab
-  endtry
-endfunction
