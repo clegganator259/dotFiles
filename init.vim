@@ -20,18 +20,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 
-Plug 'dense-analysis/ale'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2'
-Plug 'ncm2/ncm2-go'
-
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-
 " Python Plugins
 " Plug 'psf/black'
 
@@ -109,20 +97,6 @@ let g:NERDTreeQuitOnOpen = 1
 
 "======== Autocomplete settings ======="
 set completeopt=noinsert,menuone,noselect
-autocmd BufEnter * call ncm2#enable_for_buffer()
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-"====== Language server settings ======"
-let g:LanguageClient_autoStart = 1
-let g:LanguageClient_serverCommands = {}
-let g:LanguageClient_diagnosticsSignsMax = 0
-set formatexpr=LanguageClient#textDocument_rangeFormatting_sync()
-nnoremap <leader>lcs :LanguageClientStart<CR>
-nnoremap <leader>a :call LanguageClient_contextMenu()<CR>
-let g:lsp_log_verbose = 1
-let g:lsp_log_file = expand('~/lsp-logs')
-
 
 "Open Nerd tree when vim is not given a file to open with"
 autocmd StdinReadPre * let s:std_in=1
@@ -149,18 +123,7 @@ au BufNewFile,BufRead *.yaml
 
 "=========== Rust settings ============"
 let g:autofmt_autosave = 1
-let g:LanguageClient_serverCommands["rust"] = ['rustup', 'run', 'stable', 'rls']
 
-"========== Python settings ==========="
-let g:LanguageClient_serverCommands["python"] = ['pyls']
-let g:ale_linters["python"] = ['flake8']
-let g:ale_fixers["python"] = ['black', 'isort']
-let g:ale_python_auto_pipenv = 1
-let g:ale_python_black_auto_pipenv = 1
-let g:ale_python_flake8_auto_pipenv = 1
-let g:ale_python_isort_auto_pipenv = 1
-let g:ale_python_flake8_auto_pipenv = 1
-let g:ale_python_flake8_options = "flake8 --ignore E203,E266,E501,W503,W293,W291,E231 node_modules build .cache .tox .eggs dist *.egg-info scratch*.py .build" 
 
 function BlackOnSave()
      :Black
@@ -168,17 +131,6 @@ function BlackOnSave()
 endfunction
 command! WB call BlackOnSave()
 
-"========== Golang settings ==========="
-let g:LanguageClient_serverCommands["go"] = ['go-langserver', '-diagnostics', '-lint-tool', 'golint']
-
-"========== Clojure settings ==========="
-let g:LanguageClient_serverCommands["clojure"] = ['clojure-lsp']
-
-"========== Elixir settings ============"
-let g:LanguageClient_serverCommands["elixir"] = ['/Users/davidclegg/repos/elixir-ls/rel']
-
-"======== Javascript settings==========="
-let g:LanguageClient_serverCommands["javascript"] = ['javascript-typescript-stdio']
 
 command! Json2py :%s/"/'/ge  |  :%s/true/True/ge | :%s/false/False/ge | :%s/null/None/ge
 command! Py2json :%s/'/"/ge | :%s/True/true/ge | :%s/False/false/ge | :%s/None/null/ge
