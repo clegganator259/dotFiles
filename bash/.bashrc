@@ -2,13 +2,17 @@
 # ~/.bashrc
 #
 
+source ~/git-prompt.sh
+
 # Command prompt config
-export PS1="\[\e[1;32m\][\[\e[033m\]\t \[\e[1;32m\]\u@\h \[\e[0;36m\]\w\e[1;32m\]]\n \[\e[0;34m\]λ \[$(tput sgr0)\]"
+export PS1='\[\e[1;32m\][\[\e[033m\]\]\t \[\e[1;32m\]\u@\h \[\e[0;36m\]\w\[\e[1;32m\]]$(__git_ps1 "(\[\e[0;34m\]%s\[\e[1;32m\])")\n \[\e[0;34m\]λ \[\e[0m'
 
 # Sets readline to vi mode
 set -o vi
 
 [[ $- != *i* ]] && return
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 #####################################################################################
 ###                                VIM CONFIG                                     ###
@@ -114,4 +118,22 @@ export PATH=$PATH:$GOROOT/bin
 
 alias readlink=greadlink
 
+export PIPX_DEFAULT_PYTHON="$HOME/.pyenv/versions/3.8.13/bin/python"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Created by `pipx` on 2022-09-26 12:53:26
+export PATH="$PATH:/Users/davidclegg/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Elixir path tools
+export PATH="$PATH:/usr/local/bin/elixir"
+
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="vim"
