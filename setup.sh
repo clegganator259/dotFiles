@@ -1,3 +1,15 @@
+# Moves all of the files into the correct place for their configuration.
+#
+# Usage
+# ./setup.sh
+#
+# Installs at the default location (~)
+#
+# ./setup.sh target_dir
+#
+# Sets the files up with the root at the specified directory
+
+
 BASEDIR=$(cd "$(dirname $0)" && pwd)
 TARGET_DIR=${1:-~}
 # Running example
