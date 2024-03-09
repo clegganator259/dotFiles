@@ -119,6 +119,7 @@ export PATH=$PATH:$GOROOT/bin
 alias readlink=greadlink
 
 export PIPX_DEFAULT_PYTHON="$HOME/.pyenv/versions/3.8.13/bin/python"
+. "$HOME/.cargo/env"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
@@ -129,7 +130,6 @@ export PATH="$PATH:/Users/davidclegg/.local/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Elixir path tools
 export PATH="$PATH:/usr/local/bin/elixir"
@@ -137,3 +137,6 @@ export PATH="$PATH:/usr/local/bin/elixir"
 alias vim="nvim"
 alias vi="nvim"
 alias oldvim="vim"
+
+export PATH="$PATH:/usr/bin/nvim"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
