@@ -26,4 +26,6 @@ dimensions={columns=0, lines=0}
 dynamic_title=true
 [font]
 size=16
-
+normal.family="FiraMono Nerd Font"
+bold.family="FiraMono Nerd Font"
+italic.family="FiraMono Nerd Font"
