@@ -22,7 +22,7 @@ require("lazy").setup({
             local configs = require("nvim-treesitter.configs")
 
             configs.setup({
-                ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "typescript", "go"},
+                ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html", "typescript", "go" },
                 sync_install = false,
                 highlight = { enable = true },
                 indent = { enable = true },
@@ -55,10 +55,29 @@ require("lazy").setup({
     {
         "nvimtools/none-ls.nvim",
         dependencies = { "nvim-lua/plenary.nvim" },
+        enabled = false
+    },
+    {
+        "mfussenegger/nvim-lint",
+        config = function()
+            local lint = require("lint")
+            lint.linters_by_ft = {
+                linters_by_ft = {
+                    python = { "flake8" },
+                },
+            }
+        end
+    },
+    {
+        'stevearc/conform.nvim',
+        opts = {},
     },
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
+        'mhinz/vim-signify' 
     }
 
 })
