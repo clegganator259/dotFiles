@@ -32,6 +32,14 @@ alias bashrc="nvim ~/.bashrc && reconfig"
 alias vimrc="nvim ~/.config/nvim/init.vim && reconfig"
 alias tmuxrc="nvim ~/.tmux.conf && reconfig"
 
+
+#####################################################################################
+###                                 MY CONFIG                                     ###
+#####################################################################################
+if command -v tms --help &> /dev/null
+then
+    tms config -p ~/repos ~/dotfiles ~/personal-development &> /dev/null
+fi
 #####################################################################################
 ###                                 MY CONFIG                                     ###
 #####################################################################################
@@ -112,7 +120,7 @@ alias daemons="mongod --dbpath=/Users/davidclegg/MongoData/ & blackd"
 
 # GO bindings
 # Adds go to path
-export GOROOT=/usr/local/Cellar/go/1.10.1/libexec/
+export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin
 
@@ -140,3 +148,7 @@ alias oldvim="vim"
 
 export PATH="$PATH:/usr/bin/nvim"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
