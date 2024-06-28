@@ -43,6 +43,9 @@ alias vim="nvim"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 #########################
 # Common command remaps #
 #########################
@@ -76,6 +79,10 @@ fi
 reconfig(){ 
   source ~/.zshrc;
   tmux source-file ~/.tmux.conf;
+}
+
+up() { 
+  cd $(eval printf '../'%.0s {1..$1});
 }
 
 # Edit config aliases
