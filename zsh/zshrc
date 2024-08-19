@@ -62,7 +62,8 @@ fi
 # Adds bin folder
 export PATH="$PATH:/Users/davidclegg/dotfiles/bin"
 
-alias up=cd ..
+# Go up n directories if no arguments are supplied goes up 1
+alias up="cd .."
 
 ##########################
 # Setup TMS if it exists #
