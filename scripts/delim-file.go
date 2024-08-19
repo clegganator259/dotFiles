@@ -5,6 +5,7 @@ import (
     "strings"
     "io"
     "os"
+    "bufio"
 )
 
 func DelimitFile(sourcePath string) error {
@@ -15,6 +16,25 @@ func DelimitFile(sourcePath string) error {
     }
     defer inputFile.Close()
 
+    
+    if _, err := os.Stat(destPath); err == nil {
+        fmt.Printf("Dest file %s exists, do you want to replace (Y/N)\n", destPath)
+        reader := bufio.NewReader(os.Stdin)
+        // ReadString will block until the delimiter is entered
+        input, _ := reader.ReadString('\n')
+        if strings.ToLower(input) == "n\n"{
+            fmt.Print("Cancelling")
+            return nil
+        }
+        if strings.ToLower(input) != "y\n" {
+            fmt.Printf("%s", input)
+            return fmt.Errorf("Invalid choice")
+        }
+        fmt.Print("Replacing")
+    } else {
+        fmt.Printf("Error %v", err)
+        return fmt.Errorf("Couldn't open dest file: %v", err)
+    }
     outputFile, err := os.Create(destPath)
     if err != nil {
         return fmt.Errorf("Couldn't open dest file: %v", err)
@@ -36,5 +56,8 @@ func DelimitFile(sourcePath string) error {
 }
 
 func main() {
-    DelimitFile(os.Args[1])
+    err := DelimitFile(os.Args[1])
+    if err != nil {
+        fmt.Printf("Error: %v", err)
+    }
 }
