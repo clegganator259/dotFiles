@@ -48,7 +48,7 @@ export VISUAL="nvim"
 #########################
 
 if type "eza" > /dev/null; then
-  alias ls=exa
+  alias ls=eza
 else
   echo "Need to install eza (homebreww for mac)"
 fi
@@ -58,6 +58,8 @@ if type "greadlink" > /dev/null; then
 else
     echo "Install coreutils (homebrew)"
 fi
+
+alias up=cd ..
 
 ##########################
 # Setup TMS if it exists #
@@ -97,3 +99,6 @@ reconfig(){
   source ~/.zshrc;
   tmux source-file ~/.tmux.conf;
 }
+
+# Created by `pipx` on 2024-07-01 16:58:17
+export PATH="$PATH:/Users/davidclegg/.local/bin"

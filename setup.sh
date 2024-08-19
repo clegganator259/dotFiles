@@ -17,6 +17,7 @@ TARGET_DIR=${1:-~}
 ln -nsf $BASEDIR/bash/.bashrc $TARGET_DIR/.bashrc
 ln -nsf $BASEDIR/bash/git-prompt.sh $TARGET_DIR/git-prompt.sh
 ln -nsf $BASEDIR/tmux/.tmux.conf $TARGET_DIR/.tmux.conf
+mkdir -p $TARGET_DIR/.config/alacritty
 ln -nsf $BASEDIR/alacritty/alacritty.toml $TARGET_DIR/.config/alacritty/alacritty.toml
 ln -nsf $BASEDIR/nvim $TARGET_DIR/.config/nvim
 ln -nsf $BASEDIR/zsh/zshrc $TARGET_DIR/.zshrc
