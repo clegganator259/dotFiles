@@ -59,6 +59,9 @@ else
     echo "Install coreutils (homebrew)"
 fi
 
+# Adds bin folder
+export PATH="$PATH:/Users/davidclegg/dotfiles/bin"
+
 alias up=cd ..
 
 ##########################
