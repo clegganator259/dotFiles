@@ -17,23 +17,21 @@ func DelimitFile(sourcePath string) error {
     defer inputFile.Close()
 
     
+    // If the destination file exists we should check if the user wants to replace it
     if _, err := os.Stat(destPath); err == nil {
         fmt.Printf("Dest file %s exists, do you want to replace (Y/N)\n", destPath)
         reader := bufio.NewReader(os.Stdin)
         // ReadString will block until the delimiter is entered
         input, _ := reader.ReadString('\n')
-        if strings.ToLower(input) == "n\n"{
-            fmt.Print("Cancelling")
-            return nil
-        }
         if strings.ToLower(input) != "y\n" {
             fmt.Printf("%s", input)
             return fmt.Errorf("Invalid choice")
         }
+        if strings.ToLower(input) == "n\n"{
+            fmt.Print("Cancelling")
+            return nil
+        }
         fmt.Print("Replacing")
-    } else {
-        fmt.Printf("Error %v", err)
-        return fmt.Errorf("Couldn't open dest file: %v", err)
     }
     outputFile, err := os.Create(destPath)
     if err != nil {
