@@ -43,6 +43,12 @@ alias vim="nvim"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+
+# Add history search with ctrl R
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
+
 #########################
 # Common command remaps #
 #########################
@@ -63,7 +69,14 @@ fi
 export PATH="$PATH:/Users/davidclegg/dotfiles/bin"
 
 # Go up n directories if no arguments are supplied goes up 1
-alias up="cd .."
+function up(){
+  local path=""
+  for ((i=1;i<=${1:=1};i++)); do
+    path="../$path"
+  done
+  cd "$path"
+}
+
 
 ##########################
 # Setup TMS if it exists #
@@ -110,3 +123,8 @@ export PATH="$PATH:/Users/davidclegg/.local/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

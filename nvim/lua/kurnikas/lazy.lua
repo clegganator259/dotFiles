@@ -33,6 +33,7 @@ require("lazy").setup({
 					"lua",
 					"vim",
 					"vimdoc",
+					"sql",
 					"query",
 					"elixir",
 					"heex",

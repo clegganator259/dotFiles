@@ -93,9 +93,9 @@ vim.diagnostic.config({
 	undercurl = true,
 })
 
-require("mason").setup({ ensure_installed = { "isort", "stylua", "black" } })
+require("mason").setup({ ensure_installed = { "isort", "stylua", "black", "gofmt", "golangcilint" } })
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "gopls", "rust_analyzer", "pyright" },
+	ensure_installed = { "lua_ls", "gopls", "rust_analyzer", "pyright", "spectral" },
 	handlers = {
 		function(server_name)
 			require("lspconfig")[server_name].setup({})
@@ -103,6 +103,37 @@ require("mason-lspconfig").setup({
 		lua_ls = function()
 			local lua_opts = lsp.nvim_lua_ls()
 			require("lspconfig").lua_ls.setup(lua_opts)
+		end,
+		gopls = function()
+			local gopls_opts = {
+				buildFlags = { "-tags=integration acceptance" },
+				testFlags = { "-tags=integration acceptance" },
+				usePlaceholders = true,
+				cmd_env = { GOFLAGS = "-tags=integration" },
+			}
+			require("lspconfig").gopls.setup(gopls_opts)
+		end,
+		golangci_lint_ls = function()
+			local lspconfig = require("lspconfig")
+			local golangci_lint_ls_options = {
+				cmd = { "golangci-lint-langserver" },
+				root_dir = lspconfig.util.root_pattern(".git", "go.mod"),
+				init_options = {
+					buildFlags = { "-tags=integration acceptance" },
+					testFlags = { "-tags=integration acceptance" },
+					command = {
+						"golangci-lint",
+						"run",
+						"--enable-all",
+						"--disable",
+						"lll",
+						"--out-format",
+						"json",
+						"--issues-exit-code=1",
+					},
+				},
+			}
+			lspconfig.golangci_lint_ls.setup(golangci_lint_ls_options)
 		end,
 		pyright = function()
 			local pyright_opts = {

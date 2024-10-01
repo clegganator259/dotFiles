@@ -43,3 +43,6 @@ vim.keymap.set("n", "<c-l>", "<c-w>l")
 
 --- Split with leader
 vim.keymap.set("n", "<leader>vs", ":vs<CR>")
+
+--- View whole diagnostic text
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
