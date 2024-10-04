@@ -93,7 +93,7 @@ vim.diagnostic.config({
 	undercurl = true,
 })
 
-require("mason").setup({ ensure_installed = { "isort", "stylua", "black", "gofmt", "golangcilint" } })
+require("mason").setup({ ensure_installed = { "isort", "stylua", "black", "gofumpt", "golangcilint" } })
 require("mason-lspconfig").setup({
 	ensure_installed = { "lua_ls", "gopls", "rust_analyzer", "pyright", "spectral" },
 	handlers = {

@@ -6,16 +6,23 @@ export PATH=$PATH:$GOROOT/bin
 
 alias readlink=greadlink
 
+# Needed for homebrew
+export PATH="/opt/homebrew/bin:$PATH"
+# Setup pipx
 export PIPX_DEFAULT_PYTHON="$HOME/.pyenv/versions/3.8.13/bin/python"
 . "$HOME/.cargo/env"
+export PATH="$PATH:/Users/davidclegg/.local/bin"
+
+# Setup cargo
 export PATH="$HOME/.cargo/bin:$PATH"
+
+#Setup pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-# Created by `pipx` on 2022-09-26 12:53:26
-export PATH="$PATH:/Users/davidclegg/.local/bin"
 
+#Setup nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 

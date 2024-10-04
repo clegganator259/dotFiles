@@ -1,5 +1,4 @@
 autoload -U compinit; compinit
-
 export fpath=(~/dotfiles/zsh/ $fpath)
 export fpath=(${HOMEBREW_PREFIX}/share/zsh-completions $fpath)
 
@@ -56,7 +55,7 @@ bindkey '^R' history-incremental-search-backward
 if type "eza" > /dev/null; then
   alias ls=eza
 else
-  echo "Need to install eza (homebreww for mac)"
+  echo "Need to install eza (homebrew for mac)"
 fi
 
 if type "greadlink" > /dev/null; then
@@ -90,21 +89,23 @@ fi
 ##############
 # Vim remaps #
 ##############
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="vim"
+
+####################
+# Useful functions #
+####################
 
 # Reloads config files
 reconfig(){ 
   source ~/.zshrc;
   tmux source-file ~/.tmux.conf;
 }
-
 # Edit config aliases
 alias zshrc="nvim ~/.zshrc && reconfig"
 alias vimrc="nvim ~/.config/nvim/init.vim && reconfig"
 alias tmuxrc="nvim ~/.tmux.conf && reconfig"
-
-####################
-# Useful functions #
-####################
 
 function notify {
   msg="$*"
