@@ -12,6 +12,16 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
+	{
+		"stevearc/aerial.nvim",
+		opts = {},
+		-- Optional dependencies
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+			"nvim-tree/nvim-web-devicons",
+		},
+	},
+	"sheerun/vim-polyglot",
 	"tpope/vim-surround",
 	"tpope/vim-commentary",
 	"tpope/vim-fugitive",

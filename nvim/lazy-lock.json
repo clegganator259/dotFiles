@@ -1,5 +1,6 @@
 {
   "LuaSnip": { "branch": "master", "commit": "e808bee352d1a6fcf902ca1a71cee76e60e24071" },
+  "aerial.nvim": { "branch": "master", "commit": "247df216704cbe3cfa68e2ae5515c3485e281364" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "39e2eda76828d88b773cc27a3f61d2ad782c922d" },
   "conform.nvim": { "branch": "master", "commit": "1a99fdc1d3aa9ccdf3021e67982a679a8c5c740c" },
   "darkplus.nvim": { "branch": "main", "commit": "6101ffce60682208e9e076710299d189ce11c40d" },
@@ -21,6 +22,7 @@
   "vim-commentary": { "branch": "master", "commit": "c4b8f52cbb7142ec239494e5a2c4a512f92c4d07" },
   "vim-fugitive": { "branch": "master", "commit": "d4877e54cef67f5af4f950935b1ade19ed6b7370" },
   "vim-markdown": { "branch": "master", "commit": "8f6cb3a6ca4e3b6bcda0730145a0b700f3481b51" },
+  "vim-polyglot": { "branch": "master", "commit": "692e359ad9344d6e69626131f5c96743560e4d53" },
   "vim-signify": { "branch": "master", "commit": "8670143f9e12ed1cd3c9b2c54f345cdd9a4baac3" },
   "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
   "vim-swap": { "branch": "master", "commit": "9358bfdc5e377aa13e7c2c2dd8699ba32b0dcf83" },
