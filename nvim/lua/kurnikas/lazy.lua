@@ -27,7 +27,10 @@ require("lazy").setup({
 	"tpope/vim-fugitive",
 	{
 		"nvim-telescope/telescope.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" },
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"BurntSushi/ripgrep",
+		},
 		"martinsione/darkplus.nvim",
 	},
 	"preservim/vim-markdown",
