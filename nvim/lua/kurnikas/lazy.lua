@@ -75,17 +75,12 @@ require("lazy").setup({
 			"TmuxNavigatePrevious",
 		},
 	},
-	{
-		"VonHeikemen/lsp-zero.nvim",
-		dependencies = {
-			{ "williamboman/mason.nvim" },
-			{ "williamboman/mason-lspconfig.nvim" },
-			{ "neovim/nvim-lspconfig" },
-			{ "hrsh7th/cmp-nvim-lsp" },
-			{ "hrsh7th/nvim-cmp" },
-			{ "L3MON4D3/LuaSnip" },
-		},
-	},
+	{ "williamboman/mason.nvim" },
+	{ "williamboman/mason-lspconfig.nvim" },
+	{ "neovim/nvim-lspconfig" },
+	{ "hrsh7th/cmp-nvim-lsp" },
+	{ "hrsh7th/nvim-cmp" },
+	{ "L3MON4D3/LuaSnip" },
 	{
 		"nvimtools/none-ls.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
@@ -122,4 +117,14 @@ require("lazy").setup({
 		},
 	},
 	"machakann/vim-swap",
+	{
+		"stevearc/oil.nvim",
+		opts = {
+			default_file_explorer = true,
+			view_options = {
+				show_hidden = true,
+			},
+		},
+	},
+	{ "AndrewRadev/splitjoin.vim" },
 })

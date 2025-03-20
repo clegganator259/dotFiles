@@ -43,7 +43,7 @@ require("obsidian").setup({
 		default_tags = { "daily-notes" },
 	},
 })
-vim.keymap.set("n", "<leader>os", ":ObsidianQuickSwitch<CR>", { silent = true })
-vim.keymap.set("n", "<leader>on", ":ObsidianNew<CR>", { silent = true })
-vim.keymap.set("n", "<leader>otd", ":ObsidianToday<CR>", { silent = true })
-vim.keymap.set("n", "<leader>otm", ":ObsidianTomorrow<CR>", { silent = true })
+vim.keymap.set("n", "<leader>os", ":ObsidianQuickSwitch<CR>", { silent = true, desc = "Open obsidian note list" })
+vim.keymap.set("n", "<leader>on", ":ObsidianNew<CR>", { silent = true, desc = "Open a new obsidian note" })
+vim.keymap.set("n", "<leader>otd", ":ObsidianToday<CR>", { silent = true, desc = "Open the obsidian today tab" })
+vim.keymap.set("n", "<leader>otm", ":ObsidianTomorrow<CR>", { silent = true, desc = "Open the obsidian tomorrow tab" })

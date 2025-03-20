@@ -1,6 +1,6 @@
 # GO bindings
 # Adds go to path
-export GOROOT=/usr/local/go
+export GOROOT="$(brew --prefix golang)/libexec"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin
 

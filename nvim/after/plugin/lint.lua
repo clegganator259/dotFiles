@@ -2,7 +2,13 @@ local lint = require("lint")
 lint.linters_by_ft = {
 	python = { "flake8" },
 	zsh = { "zsh" },
+	sql = { "sqlfluff" },
 	-- go = { "golangcilint" },
+}
+lint.linters.sqlfluff.args = {
+	"lint",
+	"--format=json",
+	"--dialect=postgres",
 }
 
 function vim.getVisualSelection()
